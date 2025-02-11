@@ -6,6 +6,7 @@
 //
 
 import Foundation
+import UIKit
 
 enum NetworkError: Error {
     case invalidURL
@@ -17,6 +18,7 @@ protocol NetworkFetching {
     func fetchData<T: Decodable>(from urlString: String) async throws -> T
 }
 final class NetworkService: NetworkFetching {
+    private var imageCache = NSCache<NSURL, UIImage>()
     
     func fetchData<T: Decodable>(from urlString: String) async throws -> T {
         guard let url = URL(string: urlString) else {
@@ -35,6 +37,22 @@ final class NetworkService: NetworkFetching {
         } catch {
             throw NetworkError.decodingError
         }
+    }
+    
+    func fetchImage(from url: URL) async throws -> UIImage {
+        if let cachedImage = imageCache.object(forKey: url as NSURL) {
+            return cachedImage
+        }
+        
+        let (data, _) = try await URLSession.shared.data(from: url)
+        
+        guard let image = UIImage(data: data) else {
+            throw NetworkError.invalidURL
+        }
+        
+        imageCache.setObject(image, forKey: url as NSURL)
+        
+        return image
     }
 }
 
