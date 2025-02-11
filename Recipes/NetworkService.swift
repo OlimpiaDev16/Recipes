@@ -17,7 +17,8 @@ enum NetworkError: Error {
 protocol NetworkFetching {
     func fetchData<T: Decodable>(from urlString: String) async throws -> T
 }
-final class NetworkService: NetworkFetching {
+
+class NetworkService: NetworkFetching {
     private var imageCache = NSCache<NSURL, UIImage>()
     
     func fetchData<T: Decodable>(from urlString: String) async throws -> T {
@@ -56,11 +57,12 @@ final class NetworkService: NetworkFetching {
     }
 }
 
-final class MockNetworkService: NetworkFetching {
+class MockNetworkService: NetworkService {
     var mockData: Data?
     var shouldThrowError: Bool = false
+    var mockImage: UIImage?
     
-    func fetchData<T>(from urlString: String) async throws -> T where T : Decodable {
+    override func fetchData<T>(from urlString: String) async throws -> T where T : Decodable {
         if shouldThrowError {
             throw NetworkError.requestFailed
         }
@@ -74,5 +76,16 @@ final class MockNetworkService: NetworkFetching {
         } catch {
             throw NetworkError.decodingError
         }
+    }
+    
+    override func fetchImage(from url: URL) async throws -> UIImage {
+        if shouldThrowError {
+            throw NetworkError.requestFailed
+        }
+        
+        guard let image = mockImage else {
+            throw URLError(.cannotDecodeContentData)
+        }
+        return image
     }
 }

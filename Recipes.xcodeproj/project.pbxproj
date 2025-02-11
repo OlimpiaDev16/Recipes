@@ -18,6 +18,7 @@
 		12A376532D5BB52F00F7E1A2 /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12A376522D5BB52F00F7E1A2 /* NetworkService.swift */; };
 		12A376552D5BBD6D00F7E1A2 /* NetworkServiceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12A376542D5BBD6D00F7E1A2 /* NetworkServiceTests.swift */; };
 		12A376572D5BD32300F7E1A2 /* RecipeService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12A376562D5BD32300F7E1A2 /* RecipeService.swift */; };
+		12A376592D5BE36C00F7E1A2 /* RecipeServiceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12A376582D5BE36C00F7E1A2 /* RecipeServiceTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -52,6 +53,7 @@
 		12A376522D5BB52F00F7E1A2 /* NetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkService.swift; sourceTree = "<group>"; };
 		12A376542D5BBD6D00F7E1A2 /* NetworkServiceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkServiceTests.swift; sourceTree = "<group>"; };
 		12A376562D5BD32300F7E1A2 /* RecipeService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeService.swift; sourceTree = "<group>"; };
+		12A376582D5BE36C00F7E1A2 /* RecipeServiceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeServiceTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -126,6 +128,7 @@
 			children = (
 				12A376372D5BA97100F7E1A2 /* RecipesTests.swift */,
 				12A376542D5BBD6D00F7E1A2 /* NetworkServiceTests.swift */,
+				12A376582D5BE36C00F7E1A2 /* RecipeServiceTests.swift */,
 			);
 			path = RecipesTests;
 			sourceTree = "<group>";
@@ -283,6 +286,7 @@
 			files = (
 				12A376552D5BBD6D00F7E1A2 /* NetworkServiceTests.swift in Sources */,
 				12A376382D5BA97100F7E1A2 /* RecipesTests.swift in Sources */,
+				12A376592D5BE36C00F7E1A2 /* RecipeServiceTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
