@@ -40,8 +40,12 @@ final class NetworkService: NetworkFetching {
 
 final class MockNetworkService: NetworkFetching {
     var mockData: Data?
+    var shouldThrowError: Bool = false
     
     func fetchData<T>(from urlString: String) async throws -> T where T : Decodable {
+        if shouldThrowError {
+            throw NetworkError.requestFailed
+        }
         guard let data = mockData else {
             throw NetworkError.requestFailed
         }
