@@ -19,6 +19,7 @@
 		12A376552D5BBD6D00F7E1A2 /* NetworkServiceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12A376542D5BBD6D00F7E1A2 /* NetworkServiceTests.swift */; };
 		12A376572D5BD32300F7E1A2 /* RecipeService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12A376562D5BD32300F7E1A2 /* RecipeService.swift */; };
 		12A376592D5BE36C00F7E1A2 /* RecipeServiceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12A376582D5BE36C00F7E1A2 /* RecipeServiceTests.swift */; };
+		12A3765B2D5BEF0500F7E1A2 /* RecipeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12A3765A2D5BEF0500F7E1A2 /* RecipeViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -54,6 +55,7 @@
 		12A376542D5BBD6D00F7E1A2 /* NetworkServiceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkServiceTests.swift; sourceTree = "<group>"; };
 		12A376562D5BD32300F7E1A2 /* RecipeService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeService.swift; sourceTree = "<group>"; };
 		12A376582D5BE36C00F7E1A2 /* RecipeServiceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeServiceTests.swift; sourceTree = "<group>"; };
+		12A3765A2D5BEF0500F7E1A2 /* RecipeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -109,6 +111,7 @@
 				12A376502D5BA9B100F7E1A2 /* Recipes.swift */,
 				12A376522D5BB52F00F7E1A2 /* NetworkService.swift */,
 				12A376562D5BD32300F7E1A2 /* RecipeService.swift */,
+				12A3765A2D5BEF0500F7E1A2 /* RecipeViewModel.swift */,
 				12A3762A2D5BA97100F7E1A2 /* Assets.xcassets */,
 				12A3762C2D5BA97100F7E1A2 /* Preview Content */,
 			);
@@ -272,6 +275,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				12A3765B2D5BEF0500F7E1A2 /* RecipeViewModel.swift in Sources */,
 				12A376292D5BA97000F7E1A2 /* ContentView.swift in Sources */,
 				12A376512D5BA9B100F7E1A2 /* Recipes.swift in Sources */,
 				12A376572D5BD32300F7E1A2 /* RecipeService.swift in Sources */,
