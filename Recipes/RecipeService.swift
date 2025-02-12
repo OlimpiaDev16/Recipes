@@ -23,13 +23,11 @@ struct RecipeService {
         
         for recipe in recipeCollection.recipes {
             do {
-                let largeImage = try await networkService.fetchImage(from: recipe.largePhotoURL)
-                let smallImage = try await networkService.fetchImage(from: recipe.smallPhotoURL)
+                let largeImage = try await networkService.fetchImage(from: URL(string: recipe.photoURL) ?? URL(fileURLWithPath: ""))
                 
                 let recipeWithImage = RecipeWithImage(
                     recipe: recipe,
-                    largeImage: largeImage,
-                    smallImage: smallImage
+                    image: largeImage
                 )
                 
                 recipesWithImages.append(recipeWithImage)
@@ -37,8 +35,7 @@ struct RecipeService {
                 print("Failed to fetch for recipe \(recipe.name)")
                 let recipeWithImage = RecipeWithImage(
                     recipe: recipe,
-                    largeImage: nil,
-                    smallImage: nil
+                    image: nil
                 )
                 
                 recipesWithImages.append(recipeWithImage)
@@ -48,8 +45,19 @@ struct RecipeService {
     }
 }
 
-struct RecipeWithImage {
+struct RecipeWithImage: Identifiable, Hashable {
     let recipe: RecipeCollection.Recipe
-    let largeImage: UIImage?
-    let smallImage: UIImage?
+    let image: UIImage?
+    let ID: UUID = UUID()
+    var id: String {
+        recipe.id
+    }
+    
+    func hash(into hasher: inout Hasher) {
+        hasher.combine(recipe.id)
+    }
+    
+    static func == (lhs: RecipeWithImage, rhs: RecipeWithImage) -> Bool {
+        return lhs.recipe.id == rhs.recipe.id
+    }
 }

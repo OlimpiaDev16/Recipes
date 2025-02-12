@@ -54,8 +54,7 @@ final class RecipeViewModelTests: XCTestCase {
         await MainActor.run {
             XCTAssertFalse(viewModel.recipesWithImages.isEmpty, "Recipes should not be empty after a successful fetch")
             XCTAssertEqual(viewModel.recipesWithImages.first?.recipe.name, "Apam Balik")
-            XCTAssertNotNil(viewModel.recipesWithImages.first?.largeImage, "large image should be loaded successfully")
-            XCTAssertNotNil(viewModel.recipesWithImages.first?.smallImage, "small image should be loaded successfully")
+            XCTAssertNotNil(viewModel.recipesWithImages.first?.image, "image should be loaded successfully")
         }
     }
     

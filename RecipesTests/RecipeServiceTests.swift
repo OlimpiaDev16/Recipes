@@ -86,8 +86,7 @@ final class RecipeServiceTests: XCTestCase {
         
         XCTAssertEqual(recipesWithImages.count, 1)
         XCTAssertEqual(recipesWithImages.first?.recipe.name, "Apam Balik")
-        XCTAssertNotNil(recipesWithImages.first?.largeImage)
-        XCTAssertNotNil(recipesWithImages.first?.smallImage)
+        XCTAssertNotNil(recipesWithImages.first?.image)
     }
 }
 

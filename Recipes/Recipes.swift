@@ -13,17 +13,15 @@ struct RecipeCollection: Decodable {
     struct Recipe: Decodable, Identifiable {
         let cuisine: String
         let name: String
-        let largePhotoURL: URL
-        let smallPhotoURL: URL
-        let sourceURL: URL
-        let id: UUID
-        let youtubeURL: URL
+        let photoURL: String
+        let sourceURL: String?
+        let id: String
+        let youtubeURL: String?
         
         enum CodingKeys: String, CodingKey {
             case cuisine
             case name
-            case largePhotoURL = "photo_url_large"
-            case smallPhotoURL = "photo_url_small"
+            case photoURL = "photo_url_large"
             case sourceURL = "source_url"
             case id = "uuid"
             case youtubeURL = "youtube_url"
