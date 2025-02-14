@@ -2,7 +2,6 @@
 #### Recipe Finder is a SwiftUI-based iOS app that allows users to browse, search, and view details of various recipes. The app fetches recipe data from a remote JSON API and provides an intuitive interface for discovering delicious meals.
 
 ## 📱 Features
-- 📋 Filter by Cuisine: (** not ready at this commit)
 - ➡️ Detailed Recipe View: Access link to the full recipes and other related media.
 - 🖼️ Image Caching: Efficiently load and display recipe images.
 
@@ -32,15 +31,15 @@
 - iOS 17+ simulator or device
 
 ## Installation
-- 1. Close the repository 
+1.- Close the repository 
 ```
 git clone -link to the repo-
 cd Recipes
 ```
-- 2. Open in Xcode
+2.- Open in Xcode
 ``` open Recipes.xcodeproj
 ```
-- 3. Run the app on a simulator or physical device.
+3.- Run the app on a simulator or physical device.
 
 ## 🏗️ Architecture 
 - MVVM (Model-View-ViewModel): Separates UI logic from data fetching and state management.
@@ -48,11 +47,11 @@ cd Recipes
 
 ## 🎥 Summary
 ### 📸 Screenshots & Demo Video
-#### HERE: Include screenshots or a video showcasing the app's features. (Add links or embed images)
+
+/var/folders/p5/s9hgny392rn19md4yhm10qdc0000gn/T/TemporaryItems/NSIRD_screencaptureui_p5WF8a/Screenshot 2025-02-14 at 11.34.08 AM.png
 
 ## 🎯 Focus Areas
 ### I prioritized the following areas:
-
 - User Experience (UX): Ensuring smooth navigation and a clean UI.
 - Performance: Optimized image loading and API calls for a responsive app.
 - Scalability: Using MVVM to keep the codebase modular and maintainable.
