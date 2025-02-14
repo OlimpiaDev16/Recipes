@@ -37,7 +37,8 @@ git clone -link to the repo-
 cd Recipes
 ```
 2. Open in Xcode
-``` open Recipes.xcodeproj
+``` 
+open Recipes.xcodeproj
 ```
 3. Run the app on a simulator or physical device.
 
@@ -47,7 +48,7 @@ cd Recipes
 
 ## 🎥 Summary
 ### 📸 Screenshots & Demo Video
-/var/folders/p5/s9hgny392rn19md4yhm10qdc0000gn/T/TemporaryItems/NSIRD_screencaptureui_4arCXL/Screenshot 2025-02-14 at 11.39.41 AM.png
+
 
 ## 🎯 Focus Areas
 ### I prioritized the following areas:
@@ -74,8 +75,8 @@ cd Recipes
 - Limited Offline Support: Chose to prioritize real-time data fetching over full offline caching due to time constraints.
 
 ## 🛠️ Weakest Part of the Project
-### The weakest part of the project is limited offline support, error handling, or UI polish. If I had more time, I would improve better caching, more robust error handling, UI enhancements.
-### In addition to enhancements, I would also add user friendly features: 
+#### The weakest part of the project is limited offline support, error handling, or UI polish. If I had more time, I would improve better caching, more robust error handling, UI enhancements.
+#### In addition to enhancements, I would also add user friendly features: 
 - 🔍 Search Recipes: Find recipes by name.
 - 🌍 Filter by Cuisine: Browse recipes based on cuisine type.
 - 🎥 YouTube Integration: Watch cooking tutorial videos directly from the app.
