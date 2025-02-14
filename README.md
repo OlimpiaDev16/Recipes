@@ -31,15 +31,15 @@
 - iOS 17+ simulator or device
 
 ## Installation
-1.- Close the repository 
+1. Close the repository 
 ```
 git clone -link to the repo-
 cd Recipes
 ```
-2.- Open in Xcode
+2. Open in Xcode
 ``` open Recipes.xcodeproj
 ```
-3.- Run the app on a simulator or physical device.
+3. Run the app on a simulator or physical device.
 
 ## 🏗️ Architecture 
 - MVVM (Model-View-ViewModel): Separates UI logic from data fetching and state management.
@@ -47,8 +47,7 @@ cd Recipes
 
 ## 🎥 Summary
 ### 📸 Screenshots & Demo Video
-
-/var/folders/p5/s9hgny392rn19md4yhm10qdc0000gn/T/TemporaryItems/NSIRD_screencaptureui_p5WF8a/Screenshot 2025-02-14 at 11.34.08 AM.png
+/var/folders/p5/s9hgny392rn19md4yhm10qdc0000gn/T/TemporaryItems/NSIRD_screencaptureui_4arCXL/Screenshot 2025-02-14 at 11.39.41 AM.png
 
 ## 🎯 Focus Areas
 ### I prioritized the following areas:
