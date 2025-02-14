@@ -27,7 +27,7 @@ class RecipeViewModel: ObservableObject {
             let recipes = try await recipeService.fetchRecipesAndImages()
             self.recipesWithImages = recipes
         } catch {
-            self.errorMessage = "Failed to load recipes: \(error.localizedDescription)"
+            self.errorMessage = String.loadingErrorText + error.localizedDescription
         }
         isLoading = false 
     }
