@@ -46,8 +46,8 @@ open Recipes.xcodeproj
 - MVVM (Model-View-ViewModel): Separates UI logic from data fetching and state management.
 - Dependency Injection: Makes networking and data models testable.
 
-## 🎥 Summary
-### 📸 Screenshots & Demo Video
+## Summary
+### 📸 Screenshots 
 <img width="352" alt="Screenshot 2025-02-14 at 11 43 19 AM" src="https://github.com/user-attachments/assets/34f91744-8aba-49b7-b5d5-50c23209e8ea" />
 <img width="351" alt="Screenshot 2025-02-14 at 11 54 57 AM" src="https://github.com/user-attachments/assets/b6732dae-3466-4d5d-bfa4-e7e226b3268f" />
 
