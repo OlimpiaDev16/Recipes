@@ -33,7 +33,7 @@
 ## Installation
 1. Close the repository 
 ```
-git clone -link to the repo-
+git clone https://github.com/OlimpiaDev16/Recipes.git
 cd Recipes
 ```
 2. Open in Xcode
